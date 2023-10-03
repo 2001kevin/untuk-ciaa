@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans:wght@500&family=PT+Serif&family=Poppins:wght@500&display=swap');
+
+body {
+    margin: 0px;
+       font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+ 
+    font-size: 80pt;
+
+    text-align: center;
+
+    user-select: none;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 120px;
+    margin-right: 90vh;
+    margin-left: 90vh;
+    padding: 8px;
+    
+    text-align: center;
+    background-color: pink;
+    border-radius: 10px;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width:320px) {
+    .button{
+        margin-top: 120px;
+        margin-right: 100px;
+        margin-left: 100px;
+        padding: 8px;
+        background-color: pink;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .button{
+        margin-right: 90vh;
+        margin-left: 90vh;
+    }
+}
